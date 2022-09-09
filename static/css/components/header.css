@@ -1,0 +1,53 @@
+/* 화면 맨위 상단의 로고,home,music 등 navigator 역할을 하는 header */
+header nav {
+  height: 60px;
+  display: grid;
+  grid-template-columns: 1fr 6fr 2fr;
+  align-items: center;
+  padding: 0 2vw;
+}
+
+.nav-logo {
+  width: 100%;
+  justify-self: center;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+header nav ul {
+  display: flex;
+  font-size: 14px;
+  align-items: center;
+}
+header nav .nav-left {
+  padding-left: 20px;
+}
+header nav .nav-right {
+  justify-self: flex-end;
+}
+
+header nav .nav-left li {
+  width: 100%;
+  margin-right: 1vw;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header nav .nav-right li {
+  margin-left: 1vw;
+}
+
+@media (max-width: 830px) {
+  header nav {
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 0 2vw;
+  }
+  header nav .nav-left {
+    display: none;
+  }
+  header nav .nav-right li {
+    margin-left: 2vw;
+  }
+}

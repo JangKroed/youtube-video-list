@@ -1,0 +1,56 @@
+/* video 정렬  */
+.video-grid {
+  width: 100%;
+  padding: 20px 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-items: center;
+  gap: 4vh 10px;
+}
+.video-grid__item {
+  width: 100%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.video-grid__item-img {
+  position: relative;
+  width: 100%;
+  height: 180px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.video-grid__item-info {
+  width: 100%;
+  max-width: 350px;
+  padding: 10px 0px;
+}
+.video-grid__item-info h2 {
+  color: black;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; /* 말줄임 적용 */
+  margin-bottom: 8px;
+}
+
+.video-grid__item-info div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.video-grid__item-info div span {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.video-grid__item-img > button {
+  position: absolute;
+  left: 88%;
+  /* 맨위로 우선순위 */
+  /* z-index: 10;*/
+}

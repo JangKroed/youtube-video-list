@@ -1,0 +1,41 @@
+/* 화면 밑단에 버튼 부분들 */
+.change-page {
+  display: flex;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+.prev-btn,
+.next-btn {
+  width: 80px;
+  height: 40px;
+  border: none;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+  margin: 0 2vw;
+}
+
+.change-page__buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.change-page__buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  margin: 0 10px;
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 7px;
+}
+
+.focus {
+  background-color: black;
+  color: white;
+}
